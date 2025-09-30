@@ -15,6 +15,7 @@ const Schoolhomepage = () => {
          }
         userData.push({username, userclass, userage});
          localStorage.setItem("user", JSON.stringify(userData));
+         alert("User added successfully")
         showResult()
         }
         function showResult(params) {
