@@ -38,7 +38,7 @@ const Schoolhomepage = () => {
   return (
     <div>
         <h1 className='text-center mt-5 font-bold text-2xl'>Add New Student</h1>
-        <div className='w-3/5  mx-auto mb-15 p-20 rounded-4xl shadow-lg bg-gray-200'>
+        <div className='w-3/5  mx-auto mb-15 p-20 rounded-4xl shadow-lg bg-gray-100'>
             <label htmlFor="">Name</label>
             <input type="text" id='username' onChange={(e) => setusername(e.target.value)} className='w-full px-3 py-2 border border-blue-300 bg-white rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500' placeholder='Your Name' />
             <label htmlFor="">Class</label>
@@ -68,7 +68,10 @@ const Schoolhomepage = () => {
                                 <td>{username}</td>
                                 <td>{userclass}</td>
                                 <td>{userage}</td>
-                                <td><button className='bg-red-500 hover:bg-red-700 text-white my-2 font-bold py-2 px-4 rounded' onClick={() => deleteHandler(i)}>Delete</button></td>
+                                <td>
+                                    <button className='bg-green-500 hover:bg-green-700 text-white my-2 font-bold py-2 px-4 rounded mx-1'>Edit</button>
+                                    <button className='bg-red-500 hover:bg-red-700 text-white my-2 font-bold py-2 px-4 rounded' onClick={() => deleteHandler(i)}>Delete</button>
+                                </td>
                             </tr>
                         )
                     })
