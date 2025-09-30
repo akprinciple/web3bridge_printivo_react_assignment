@@ -36,8 +36,8 @@ const Schoolhomepage = () => {
 
   return (
     <div>
-        <h1 className='text-center mt-15 font-bold text-4xl'>Add New Student</h1>
-        <div className='w-3/5  mx-auto p-20 rounded-4xl shadow-lg bg-gray-200'>
+        <h1 className='text-center mt-5 font-bold text-2xl'>Add New Student</h1>
+        <div className='w-3/5  mx-auto mb-15 p-20 rounded-4xl shadow-lg bg-gray-200'>
             <label htmlFor="">Name</label>
             <input type="text" id='username' onChange={(e) => setusername(e.target.value)} className='w-full px-3 py-2 border border-blue-300 bg-white rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500' placeholder='Your Name' />
             <label htmlFor="">Class</label>
@@ -47,9 +47,9 @@ const Schoolhomepage = () => {
             <button className='mt-3 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded' onClick={handleSubmit}>Submit</button>
         </div>
 
-        <h3 className='text-center text-4xl font-bold'>All Users</h3>
+        <h3 className='text-center text-2xl font-bold'>All Users</h3>
         <table className='table-auto border-collapse w-4/5 mx-auto my-5'>
-            <thead>
+            <thead className='bg-blue-500 text-white'>
                 <tr>
                     <th>S/N</th>
                     <th>Name</th>
