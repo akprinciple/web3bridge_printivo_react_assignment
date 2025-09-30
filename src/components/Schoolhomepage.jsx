@@ -69,8 +69,8 @@ const Schoolhomepage = () => {
                                 <td>{userclass}</td>
                                 <td>{userage}</td>
                                 <td>
-                                    <button className='bg-green-500 hover:bg-green-700 text-white my-2 font-bold py-2 px-4 rounded mx-1'>Edit</button>
                                     <button className='bg-red-500 hover:bg-red-700 text-white my-2 font-bold py-2 px-4 rounded' onClick={() => deleteHandler(i)}>Delete</button>
+                                    <button className='bg-green-500 hover:bg-green-700 text-white my-2 font-bold py-2 px-4 rounded mx-1'>Edit</button>
                                 </td>
                             </tr>
                         )
