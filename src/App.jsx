@@ -6,6 +6,7 @@ import './App.css'
 import Home from './components/Home'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Root from './components/Root.jsx'
+import AxiosTesting from './components/AxiosTesting.jsx'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -21,6 +22,10 @@ function App() {
         {
           path: 'home',
           element: <Home/>
+        },
+        {
+          path: 'blog',
+          element: <AxiosTesting/>
         }
       ]
     }
